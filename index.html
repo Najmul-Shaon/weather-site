@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Live Weather Update</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="indputFiled" type="text" class="form-control"
+                    placeholder="Enter location or city for Weather ...">
+                <div class="input-group-append">
+                    <button id="searchField" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+            <h1>City Name : <span id="city"></span></h1>
+            <h3>Temp : <span id="temp"></span>&deg;C</h3>
+            <h3 class="lead">Atmosphere : <span id="atmosphere"></span></h3>
+        </div>
+    </div>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
